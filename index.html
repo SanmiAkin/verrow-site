@@ -99,7 +99,7 @@ h2{font-family:"Newsreader",Georgia,serif;font-size:clamp(2rem,4vw,3.25rem);line
 .srcbg::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(242,239,230,.94) 0,rgba(242,239,230,.78) 38%,rgba(231,227,216,.62) 100%)}
 .ledger{margin-top:3rem;display:grid;grid-template-columns:minmax(0,1fr);border:1px solid #14140F;background:rgba(251,250,246,.93);-webkit-backdrop-filter:blur(16px) saturate(1.1);backdrop-filter:blur(16px) saturate(1.1)}
 @media (prefers-reduced-transparency:reduce){.ledger{background:#FBFAF6;-webkit-backdrop-filter:none;backdrop-filter:none}}
-@media (min-width:48rem){.ledger{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (min-width:48rem){.ledger{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .entry{display:flex;flex-direction:column;gap:1rem;padding:clamp(1.5rem,2.6vw,2rem);border-bottom:1px solid rgba(20,20,15,.2);min-width:0}
 .entry:last-child{border-bottom:0}
 @media (min-width:48rem){.entry{border-bottom:0;border-right:1px solid rgba(20,20,15,.2)}.entry:last-child{border-right:0}}
@@ -241,7 +241,7 @@ footer .row{display:flex;justify-content:space-between;gap:.5rem 1.5rem;flex-wra
     <img class="tone" src="https://images.unsplash.com/photo-1759338584492-45647a320916?fm=jpg&amp;q=70&amp;w=2400&amp;auto=format&amp;fit=crop" alt="" fetchpriority="high">
     <div class="w">
       <div class="copy glass">
-        <h1>Every duty on your rental property, with its date and its source.</h1>
+        <h1>The duties on your rental property, each with its date and its source.</h1>
         <p class="lede">Verrow tells a self-managing landlord in England what the law requires for their property, when each thing is due, and what is still outstanding.</p>
         <a class="btn" href="#register">Register interest</a>
       </div>
@@ -262,7 +262,6 @@ footer .row{display:flex;justify-content:space-between;gap:.5rem 1.5rem;flex-wra
           <li class="gap">
             <span class="duty">Deposit protected in a scheme</span>
             <span class="st m">Not held</span>
-            <span class="cite m">Housing Act 2004, s. 213</span>
           </li>
         </ol>
       </figure>
@@ -274,10 +273,10 @@ footer .row{display:flex;justify-content:space-between;gap:.5rem 1.5rem;flex-wra
       <div class="intro">
         <p class="kicker">How it works</p>
         <h2 id="h-how" class="serif">Three steps, one property at a time.</h2>
-        <p class="before">A folder of certificates, a calendar of reminders, and no way to know if anything is missing. Verrow puts them in one list, with the law beside each one.</p>
+        <p class="before">Certificates in a folder and reminders in a calendar make it hard to see what is missing. Verrow puts each duty in one list, with the law beside it.</p>
       </div>
       <ol class="steps">
-        <li><span class="n" aria-hidden="true">1</span><div><h3>Add a property</h3><p>Enter the address and tell us how it is let.</p></div></li>
+        <li><span class="n" aria-hidden="true">1</span><div><h3>Add a property</h3><p>Enter the postcode and tell us how the property is let.</p></div></li>
         <li><span class="n" aria-hidden="true">2</span><div><h3>See what applies</h3><p>Verrow lists each duty that applies, the date each one falls due, and what is still outstanding. Every duty links to the words in the law it came from.</p></div></li>
         <li><span class="n" aria-hidden="true">3</span><div><h3>Keep the evidence</h3><p>Add each certificate to the vault. Verrow holds it with a fingerprint and puts it in your evidence pack.</p></div></li>
       </ol>
@@ -299,7 +298,7 @@ footer .row{display:flex;justify-content:space-between;gap:.5rem 1.5rem;flex-wra
                 <li><span class="d">Annual gas safety check</span><span class="st">Due 14 Mar 2027</span><span class="c">SI 1998/2451, reg. 36(3)</span></li>
                 <li><span class="d">Electrical installation inspected and tested</span><span class="st">Held</span><span class="c">SI 2020/312, reg. 3</span></li>
                 <li><span class="d">A smoke alarm on each storey with living accommodation</span><span class="st">Held</span><span class="c">SI 2015/1693, reg. 4(1)(a)(i)</span></li>
-                <li class="gap"><span class="d">Deposit protected in a scheme</span><span class="st">Not held</span><span class="c">Housing Act 2004, s. 213</span></li>
+                <li class="gap"><span class="d">Deposit protected in a scheme</span><span class="st">Not held</span></li>
                 <li class="gap"><span class="d">Selective licensing</span><span class="st">Ask the council</span><span class="c">Housing Act 2004, s. 80</span></li>
               </ul>
             </div>
@@ -333,7 +332,7 @@ footer .row{display:flex;justify-content:space-between;gap:.5rem 1.5rem;flex-wra
             <li><span class="k">05</span><span>A vault that holds each certificate with a fingerprint</span></li>
             <li><span class="k">06</span><span>An evidence pack</span></li>
           </ul>
-          <p class="aside">Where we do not hold a council&rsquo;s data, we say so.</p>
+          <p class="aside">Where we do not hold a council's data, we say so.</p>
         </div>
       </div>
     </div>
@@ -355,25 +354,15 @@ footer .row{display:flex;justify-content:space-between;gap:.5rem 1.5rem;flex-wra
           <div class="miss"><span class="ml">If it is missed</span><span class="what">If the council serves a remedial notice and it is not complied with, the council may charge a penalty of up to &pound;5,000.</span><a class="cite m" href="https://www.legislation.gov.uk/uksi/2015/1693/regulation/8">SI 2015/1693, reg. 8(2)</a></div>
         </div>
         <div class="entry">
-          <div class="margin"><span class="ml">The duty</span><span class="duty">A copy of the gas safety record to each existing tenant within 28 days</span></div>
+          <div class="margin"><span class="ml">The duty</span><span class="duty">A copy of the gas safety record to each existing tenant within 28 days of the check</span></div>
           <figure class="leaf">
             <p class="ref m">SI 1998/2451 &middot; Regulation 36(6)(a)</p>
             <blockquote class="body" cite="https://www.legislation.gov.uk/uksi/1998/2451/regulation/36"><mark>a copy of the record made pursuant to the requirements of paragraph (3)(c) above is given to each existing tenant of premises to which the record relates within 28 days of the date of the check</mark></blockquote>
             <figcaption class="src"><a href="https://www.legislation.gov.uk/uksi/1998/2451/regulation/36">The Gas Safety (Installation and Use) Regulations 1998, reg. 36(6)(a)</a></figcaption>
           </figure>
-          <div class="miss"><span class="ml">If it is missed</span><span class="what">A criminal offence. In the Crown Court the maximum penalty may be imprisonment, an unlimited fine, or both.</span><a class="cite m" href="https://books.hse.gov.uk/gempdf/indg285.pdf">HSE, A guide to landlords&rsquo; duties (INDG285)</a></div>
-        </div>
-        <div class="entry">
-          <div class="margin"><span class="ml">The duty</span><span class="duty">A tenancy deposit held in an authorised scheme from the day it is received</span></div>
-          <figure class="leaf">
-            <p class="ref m">2004 c. 34 &middot; Section 213(1)</p>
-            <blockquote class="body" cite="https://www.legislation.gov.uk/ukpga/2004/34/section/213"><mark>Any tenancy deposit paid to a person in connection with a shorthold tenancy must, as from the time when it is received, be dealt with in accordance with an authorised scheme.</mark></blockquote>
-            <figcaption class="src"><a href="https://www.legislation.gov.uk/ukpga/2004/34/section/213">Housing Act 2004, s. 213(1)</a></figcaption>
-          </figure>
-          <div class="miss"><span class="ml">If it is missed</span><span class="what">The court must order the landlord to pay the tenant not less than the amount of the deposit and not more than three times the amount.</span><a class="cite m" href="https://www.legislation.gov.uk/ukpga/2004/34/section/214">Housing Act 2004, s. 214(4)</a></div>
+          <div class="miss"><span class="ml">If it is missed</span><span class="what">&ldquo;If the case is then referred to the Crown Court the maximum penalty may be imprisonment, or an unlimited fine, or both.&rdquo;</span><a class="cite m" href="https://books.hse.gov.uk/gempdf/indg285.pdf">HSE, A guide to landlords' duties (INDG285)</a></div>
         </div>
       </div>
-      <p class="close">Verrow says nothing it cannot cite.</p>
     </div>
   </section>
 
@@ -384,8 +373,8 @@ footer .row{display:flex;justify-content:space-between;gap:.5rem 1.5rem;flex-wra
         <h2 id="h-about" class="serif">Built by MangoStack.</h2>
       </div>
       <div class="txt">
-        <p>Verrow is built by MangoStack Ltd. The team behind it brings two decades of solution architecture and innovation.</p>
-        <p>We built Verrow for one job: to tell a landlord in England what the law requires of their property, and to show where each requirement comes from.</p>
+        <p>Verrow is built by MangoStack Ltd, a UK studio building AI products in fintech and health-tech. Its founder has over fifteen years in commercial leadership and previously co-founded a venture that exited through acquisition. Its senior engineers bring many years in machine learning and applied AI.</p>
+        <p>We are building Verrow for one job: to tell a landlord in England what the law requires of their property, and to show where each requirement comes from.</p>
         <a class="to" href="https://mangostack.co.uk">mangostack.co.uk</a>
       </div>
     </div>
@@ -419,8 +408,8 @@ footer .row{display:flex;justify-content:space-between;gap:.5rem 1.5rem;flex-wra
       <div class="faq">
         <details><summary>Does Verrow cover Wales, Scotland or Northern Ireland?</summary><div class="a"><p>No. Verrow covers rental property in England only.</p></div></details>
         <details><summary>Is this legal advice?</summary><div class="a"><p>No. Verrow shows what the law requires and the words in the law each duty comes from. For advice on your own circumstances, speak to a solicitor.</p></div></details>
-        <details><summary>How do I know a duty is right?</summary><div class="a"><p>Every duty traces to the words in the law it came from, and Verrow shows you those words. Verrow says nothing it cannot cite.</p></div></details>
-        <details><summary>What if Verrow does not hold my council&rsquo;s licensing data?</summary><div class="a"><p>Verrow says so, and tells you to ask the council directly. It will not tell you a licence is not needed when it does not know.</p></div></details>
+        <details><summary>How do I know a duty is right?</summary><div class="a"><p>Every duty traces to the words in the law it came from, and Verrow shows you those words.</p></div></details>
+        <details><summary>What if Verrow does not hold my council's licensing data?</summary><div class="a"><p>Verrow says so, and tells you to ask the council directly. It will not tell you a licence is not needed when it does not know.</p></div></details>
         <details><summary>What does it cost?</summary><div class="a"><p>Starter, up to 3 properties, is &pound;9 a month. Portfolio, up to 10, is &pound;19. Unlimited is &pound;29. All prices include VAT, and the &pound;15 deep report is included for subscribers.</p></div></details>
         <details><summary>When does Verrow open?</summary><div class="a"><p>Verrow is not open to landlords yet. <a href="#register">Register interest</a> and we will write to you when it opens.</p></div></details>
       </div>
